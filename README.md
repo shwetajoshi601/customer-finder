@@ -156,26 +156,6 @@ Here '../config.json' is a commandline argument that specifies the path of the c
 
 If you have done all the configurations and setup correctly, you will see a list of customers with their User ID and Name sorted by User ID.
 
-Following is a snippet of the output:
-```
-Loading configuration from the file: ../config.json
-Loaded the configuration successfully.
-Found the data file path: ./data/customers.txt
-Completed reading customer records
-Successfully found the list of customers
-------------------------------------------
-Customers within 100 km
-------------------------------------------
-User ID: 4, Name: Ian Kehoe
-User ID: 5, Name: Nora Dempsey
-User ID: 6, Name: Theresa Enright
-User ID: 8, Name: Eoin Ahearn
-User ID: 11, Name: Richard Finnegan
-------------------------------------------
-Total no. of Customers found: 16
-------------------------------------------
-```
-
 A sample output using the customers.txt file is available in the output.txt in the data folder file in the root directory.
 
 ### Error Handling
