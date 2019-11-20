@@ -1,0 +1,35 @@
+SUCCESSFUL RESPONSE OUTPUT:
+===============================
+
+Loading configuration from the file: ../config.json
+Loaded the configuration successfully.
+Found the data file path: ./data/customers.txt
+Completed reading customer records
+Successfully found the list of customers
+------------------------------------------
+Customers within 100 km
+------------------------------------------
+User ID: 4, Name: Ian Kehoe
+User ID: 5, Name: Nora Dempsey
+User ID: 6, Name: Theresa Enright
+User ID: 8, Name: Eoin Ahearn
+User ID: 11, Name: Richard Finnegan
+User ID: 12, Name: Christina McArdle
+User ID: 13, Name: Olive Ahearn
+User ID: 15, Name: Michael Ahearn
+User ID: 17, Name: Patricia Cahill
+User ID: 23, Name: Eoin Gallagher
+User ID: 24, Name: Rose Enright
+User ID: 26, Name: Stephen McArdle
+User ID: 29, Name: Oliver Ahearn
+User ID: 30, Name: Nick Enright
+User ID: 31, Name: Alan Behan
+User ID: 39, Name: Lisa Ahearn
+------------------------------------------
+Total no. of Customers found: 16
+------------------------------------------
+
+SAMPLE ERROR OUTPUT:
+======================
+Loading configuration from the file: ../config.json
+{"Code":"01","Error":"FileNotFound","Message":"The file './data/customers.tx' not found. Please check if you have specified the correct file name and path. Please make sure the file exists at the specified path."}

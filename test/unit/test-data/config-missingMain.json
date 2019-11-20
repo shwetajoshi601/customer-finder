@@ -1,0 +1,4 @@
+{
+    "customerDataSrc": "F:\\PLACEMENT\\Intercom\\customer-finder\\test\\unit\\test-data\\customers.txt",
+    "distanceThreshold" : 100
+}

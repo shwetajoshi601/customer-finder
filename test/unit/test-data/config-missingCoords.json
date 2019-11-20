@@ -1,0 +1,8 @@
+{
+    "customerDataSrc": "F:\\PLACEMENT\\Intercom\\customer-finder\\test\\unit\\test-data\\customers.txt",
+    "mainCoordinates": {
+        "latitude": "",
+        "longitude": "-6.257664"
+    },
+    "distanceThreshold" : 100
+}
