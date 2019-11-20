@@ -72,7 +72,7 @@ Make sure you have GIT bash installed to clone the folder to your local system v
 1. Clone the folder into your local file system:
 
     ````
-    git clone {{the git url}}
+    git clone https://github.com/shwetajoshi601/customer-finder.git
     cd ./customer-finder
     ````
 
