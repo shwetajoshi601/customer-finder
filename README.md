@@ -63,10 +63,6 @@ To install do:
 
 You should see the version of TypeScript installed.
 
-**4. GIT**
-
-Make sure you have GIT bash installed to clone the folder to your local system via commandline. If you do not have GIT bash installed, you may download the zip file and extract.
-
 ## Application Setup and Configuration
 
 1. Clone the folder into your local file system:
