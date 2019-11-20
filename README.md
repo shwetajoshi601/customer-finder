@@ -118,13 +118,13 @@ Following is the description of the fields:
 
 | Field | Description |
 |---|---|
-|customerDataSrc| Path of the .txt file that contains the customer records. Ensure that you escape the '\' character while entering the path. The file must contain one valid JSON record on each line. The root directory contains a folder data with a customers.txt file|
+|customerDataSrc| Path of the .txt file that contains the customer records. Ensure that you escape the '\\' character while entering the path. The file must contain one valid JSON record on each line. The root directory contains a folder data with a customers.txt file|
 |mainCoordinates| GPS Co-ordinates (latitude and longitude) in degrees of the main location from where the distance needs to be measured.
 |distanceThreshold|Maximum radius from the main location in kilometers.|
 
-Here, "customerDataSrc" and "mainCoordinates" are mandatory fields. The application will throw an error if any of these are missing. distanceThreshold is an optional field, if you do provide a value in the config.json file, the application will use the value from the environment variable or the default value of 100.
+Here, "customerDataSrc" and "mainCoordinates" are mandatory fields. The application will throw an error if any of these are missing. distanceThreshold is an optional field, if you do not provide a value in the config.json file, the application will use the value from the environment variable or a default value of 100.
 
-Following is a snippet from customers.txt file. Ensure you have the records in the following format:
+Following is a snippet from the data/customers.txt file. Ensure that you have the records in the following format:
 
 ```
 {"latitude": "52.986375", "user_id": 12, "name": "Christina McArdle", "longitude": "-6.043701"}
@@ -154,7 +154,7 @@ On the command prompt, enter the following command:
 ```
 npm run find ../config.json
 ```
-Here '../config.json' is a commandline argument that specifies the path of the config file.
+Here '../config.json' is a commandline argument that specifies the path of the config file. If you are using the default config.json, you may use the same path.
 
 ### Output
 
@@ -180,7 +180,7 @@ Total no. of Customers found: 16
 ------------------------------------------
 ```
 
-A sample output using the customers.txt file is available in the docs/ folder in the root directory.
+A sample output using the customers.txt file is available in the output.txt in the data folder file in the root directory.
 
 ### Error Handling
 
@@ -205,9 +205,9 @@ Code | Error | Message |
 
 ## Running Test Cases
 
-Unit test cases for this application have been written using the Mocha framework. Before running the test cases, ensure you update the path of the customerDataSrc field in the test/unit/test-data in the following JSON files.
+Unit test cases for this application have been written using the Mocha framework. Before running the test cases, ensure you update the path of the customerDataSrc field in the JSON files present in test/unit/test-data. Each of these files are supplied as input to different test cases for different scenarios.
 
-Follow the below steps to run test cases:
+Follow the below steps to run the test cases:
 
 **1. Build**
 Build the test file using the following command:
@@ -221,7 +221,7 @@ Run the test cases using the following command:
 npm run unit-test
 ```
 
-The test coverage report will be generated in the "coverage" folder in the root directory. You can view the reports by opening the index.html file in your browser.
+The test coverage report will be generated in the "coverage" folder in the root directory. You can view the reports by opening the coverage/index.html file in your browser.
 
 Following coverage details are displayed on the browser:
 
