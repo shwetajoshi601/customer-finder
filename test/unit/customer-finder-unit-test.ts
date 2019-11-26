@@ -1,12 +1,8 @@
 import * as chai from 'chai';
-import * as sinon from 'sinon';
 import * as path from 'path';
 import { CustomerFinder } from '../../src/customer-finder';
 import { Error } from '../../src/error-handler';
-import { threadId } from 'worker_threads';
-import { POINT_CONVERSION_COMPRESSED } from 'constants';
 import { ICustomer } from '../../src/models/Customer';
-
 
 let expect = chai.expect;
 let assert = chai.assert;
